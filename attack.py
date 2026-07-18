@@ -1,15 +1,19 @@
-upgrade_wall()
+class Attack:
 
-start_attack()
+    def __init__(
+        self,
+        adb,
+        vision,
+        waits,
+        heroes,
+        spells
+    ):
 
-wait_for_base()
+        self.adb = adb
+        self.vision = vision
+        self.waits = waits
+        self.heroes = heroes
+        self.spells = spells
 
-deploy_army()
-
-deploy_heroes()
-
-deploy_spells()
-
-wait_for_battle_finish()
-
-return_home()
+    def run(self):
+        pass
